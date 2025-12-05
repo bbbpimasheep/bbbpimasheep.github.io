@@ -11,10 +11,31 @@
   <section class="teaser" aria-label="Mingxuan Liu teaser">
     <div class="teaser-overlay">
       <!-- <p class="teaser-eyebrow">Computer Graphics · Cloth & Thin Shell Simulation</p> -->
-      <h1>Mingxuan Liu</h1>
+      <div style="display: flex; align-items: baseline;">
+        <h1>Mingxuan Liu</h1>
+        <p
+          style="
+            margin-left: 10px; 
+            font-family: 'Noto Serif SC', serif;
+            font-weight: 700;
+            position: relative;
+            top: -3px; /* 调整这里，负值越大越往上 */
+          "
+        >
+          刘明轩
+        </p>
+      </div>
+      <!-- <h1 style="display: inline;">Mingxuan Liu</h1>
+      <p 
+        style="
+          font-family: 'Noto Serif SC', serif; 
+          font-weight: 700; 
+          display: inline; 
+          margin-left: 10px; 
+          transform: translateY(-10px);">刘明轩</p> -->
       <!-- <p>Mt. Qilian, Qinghai Province</p> -->
     </div>
-    <div class="teaser-caption">
+    <div class="teaser-caption" style="font-family: 'Libertinus Sans', Verdana, Helvetica, sans-serif;">
       <svg class="pin-icon" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6zm0 8.5c-1.38 0-2.5-1.122-2.5-2.5S10.62 5.5 12 5.5s2.5 1.122 2.5 2.5S13.38 10.5 12 10.5z" />
       </svg>
@@ -26,8 +47,8 @@
     <section class="left-column">
       <!-- <h2 class="name">Mingxuan Liu / 刘明轩</h2> -->
       <p>
-        I'm a junior student in the <a href="https://www.thss.tsinghua.edu.cn/">School of Software</a> at <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>. 
-        I joined the research group supervised by Prof. Minchen Li and Prof. Tao Du in 2024, and I went to Carnegie Mellon University as a student intern this summer.
+        I'm Mingxuan<a style="font-size: 16px;">("shoe-ann")</a> Liu, a junior student in the <a href="https://www.thss.tsinghua.edu.cn/">School of Software</a> at <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>. 
+        I joined the research group supervised by Prof. Minchen Li and Prof. Tao Du in 2024 and went to Carnegie Mellon University as an intern in June 2025.
       </p>
       <p>Currently, I'm pursuing a Bachelor's degree in Software Engineering and seeking a Ph.D. position in Computer Graphics.</p>
       <section>
@@ -57,8 +78,28 @@
 
       <section>
         <h2>Projects</h2>
-        <p>Before participating in research projects, I was self-learning Monte Carlo rendering and BSDF materials by studying <a style="font-size: 16px;" href="https://pbrt.org/">Physically Based Rendering (PBRT)</a>.</p>
         <div class="project-list">
+          <div class="project-item">
+            <div class="project-thumb">
+                <img src="assets/publications/collide.png" alt="Project 1 Thumbnail">
+            </div>
+            <div class="project-info">
+                <a href="data/Final_Report.pdf" class="papertitle">A Simple Impletation of Discrete Shells with Taichi</a> <a>(Course Final Project)</a>
+                <div class="authors">
+                <strong>Mingxuan Liu, Yuchen Su</strong>
+                </div>
+                <p>
+                  We built a finite element method (FEM)-based solver for simulating the elastic deformation of thin shells with collision detection.
+                  I was responsible for implementing the membrane energy and the core solver.
+                </p>
+                <p>
+                  The project was awarded the "Best Final Project" by Dr. Kui Wu from Tencent.
+                </p>
+            </div>
+          </div>
+          <p style="margin: -20px 0 -20px;">
+            Before participating in research projects, I was self-learning Monte Carlo rendering and BSDF materials by studying <a style="font-size: 16px;" href="https://pbrt.org/">Physically Based Rendering (PBRT)</a>.
+          </p>
           <div class="project-item">
             <div class="project-thumb">
               <img src="assets/publications/cbox_microfacet.png" alt="Project 1 Thumbnail">
